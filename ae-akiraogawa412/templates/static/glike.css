@@ -80,38 +80,18 @@ a.selected{
   color : #000000;
 }
 
-#content0 {
- color:gold;
- padding:0px 0px 0px 10px;
- text-shadow:
--1px -1px 0 orange,
-1px -1px 0 palegoldenrod,
--1px 1px 0 palegoldenrod,
-1px 1px 0 palegoldenrod;
-}
-
-#content0 h1{
- padding:0px 0px 0px 20px;
- font-size:x-large;
- color:yellow;
- text-shadow:none;
-}
 
 #content1 {
- color:lime;
+font-weight:bold;
+  color:#BCEDEB;
 }
 #content1  h2{
  font-size:x-large;
- color:#FFD700;
+ color:#EC544E;
 }
 #content1 li {
- font-weight:bold;
- color:khaki;
- text-shadow:
--1px -1px 0 mediumblue,
-1px -1px 0 mediumblue,
--1px 1px 0 mediumblue,
-1px 1px 0 mediumblue;
+color:#F4B64C;
+font-weight:bold;
 }
 
 #content2 h2 {
@@ -131,26 +111,20 @@ color:aqua;
 }
 #content3 {
 font-weight:bold;
-  color:#9CF196;
-font-size:large;
+  color:#BCEDEB;
 }
 #content3 h2 {
  font-size:x-large;
- color:gold;
-  text-shadow:
-0 0 0 #FFD494,
-0 0 0 #FFD494,
-0 0 0 #FFD494,
-0 0 0 #FFD494;
+ color:#EC544E;
 }
 #content3 li{
-color:#FF3300;
+color:#F4B64C;
 font-weight:bold;
-text-shadow:none;
 }
 
 #content3 a{
 text-decoration:none; 
+color:#EC544E;
 }
 
 #content4 h1{
