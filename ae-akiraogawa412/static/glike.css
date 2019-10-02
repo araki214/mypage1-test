@@ -5,131 +5,18 @@ body {
     padding: 0 2em;
     overflow: hidden;
 }
-#header{
- -moz-box-sizing: border-box;
- box-sizing: border-box;
- background-color:green;
- border-top:3px solid #FF9900;
- border-bottom:3px solid #FF9900;
- border-right :3px solid #FF9000;
- border-left  :3px solid #FF9000;
- height:20%;
- overflow:hidden;
- color:white;
- positon:fixed;
- padding:0px 140px 0px 0px;
- margin:-10px 0 -10px 0px;
- width: 1300px;
-}
-#header h1 {
- font-weight:bold;
- font-size: 30px;
- float: left;
- vertical-align: middle;
- padding: 10px 100px 0 20px;
-}
-#header li{
- font-weight:bold;
- display:inline;
- float:left;
- width:140px;
-  font-size : 19px;
-  color : #3333CC;
-  background-color : #FFD700;  
-  border-top:2px solid #ff8000;
-  border-bottom:2px solid #ff8000;
-  border-right :2px solid #ff8000;
-  border-left  :2px solid #ff8000;
-  text-align : center;  
-}
 
 
 a {
  font-weight:bold;
 }
-a:link{
- color:blue;
-}
-a:visited{
- color:#5983FF;
-}
-a:hover{
- text-decoration: none;
- color:blue;
- background-color: navy;
-}
-a:active{
- color:chartreuse;
- backgroud-color:navy;
-}
+
 a.selected{
- color:black;
+ color:white;
  text-decoration: none;
 }
-#header a{
-  display : block;
-  text-decoration: none;
-}
-#header a:hover{
-  background-color : #ffffff;
-  color : #000000;
-}
 
-#header h1 a:hover{
-  background-color :greenyellow;
-  color : #000000;
-}
-
-#content0 {
- color:gold;
- padding:0px 0px 0px 10px;
- text-shadow:
--1px -1px 0 orange,
-1px -1px 0 palegoldenrod,
--1px 1px 0 palegoldenrod,
-1px 1px 0 palegoldenrod;
-}
-
-#content0 h1{
- padding:0px 0px 0px 20px;
- font-size:x-large;
- color:yellow;
- text-shadow:none;
-}
-
-#content1 {
- color:lime;
-}
-#content1  h2{
- font-size:x-large;
- color:#FFD700;
-}
-#content1 li {
- font-weight:bold;
- color:khaki;
- text-shadow:
--1px -1px 0 mediumblue,
-1px -1px 0 mediumblue,
--1px 1px 0 mediumblue,
-1px 1px 0 mediumblue;
-}
-
-#content2 h2 {
- color:#FFFF66;
- font-size:x-large;
-}
-#content2 li {
- color:#FFCC00;
- font-weight:bold;
- font-size:large;
-}
-#content2 a:link{
- color:#CCFF33;
-}
-#content2 a:visited{
-color:aqua;
-}
-#content3 {
+#content {
   font-weight:bold;
     color:#4BA1EF;
   font-size:large;
@@ -139,17 +26,17 @@ color:aqua;
   -1px 1px 0 black,
   1px 1px 0 black;
   }
-  #content3 h2 {
+  #content h2 {
    font-size:x-large;
    color:#C63319;
   }
-  #content3 li{
+  #content li{
   color:#F19600;
   font-weight:bold;
   text-shadow:none;
   }
   
-  #content3 a{ 
+  #content a{ 
   color:#C63319;
   font-weight:bold;
   text-decoration:none; 
