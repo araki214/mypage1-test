@@ -131,30 +131,21 @@ color:aqua;
 }
 #content3 {
 font-weight:bold;
-  color:#FF9900;
-  text-shadow:
--1px -1px 0 #FFD494,
-1px -1px 0 #FFD494,
--1px 1px 0 #FFD494,
-1px 1px 0 #FFD494;
+  color:#6BD6C4;
 font-size:large;
 }
 #content3 h2 {
  font-size:x-large;
- color:gold;
-  text-shadow:
-0 0 0 #FFD494,
-0 0 0 #FFD494,
-0 0 0 #FFD494,
-0 0 0 #FFD494;
+ color:#D94538;
 }
 #content3 li{
-color:#FF3300;
+color:#F4BB00;
 font-weight:bold;
 text-shadow:none;
 }
 
 #content3 a{
+color:#D94538;
 text-decoration:none; 
 }
 
