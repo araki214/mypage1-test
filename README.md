@@ -1,2 +1,0 @@
-# mypage
-make my page
