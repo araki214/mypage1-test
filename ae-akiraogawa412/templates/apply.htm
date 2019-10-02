@@ -1,0 +1,25 @@
+{% extends '_base.htm' %}
+{% block title %}New Acconunt Request{% endblock %}
+{% block content %}
+  <div id ='content5'>
+   <h2>New Account Request</h2>
+   <p>
+    下の各欄に登録情報を入力してください。<br>
+    なお、NameとAccountは、全角でも大丈夫です。
+   </p>
+   <form method='post' action='/apply'>
+   Name:<input type='text' name='name'/><br>
+   Account:<input type='text' name='account'/><br>
+   Passward:<input type='password' name='password'/><br/>
+   <input type='submit' value='Apply'/>
+   <input type='submit' value='Cancel'
+     onclick='window.location='/';return false;'/>
+   </form>
+   </p>
+   {% ifnotequal error None%}
+   <p>
+   {{error}}
+   </p>
+   {% endifnotequal%}
+  </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends '_base.htm' %} 
+{% block title %}写真コーナー{% endblock %}
+{% block back %} 
+  <img src='DSC_0012.jpg' width='100%' height='100%'
+     style='position:fixed; top:0px; left:0px; z-index:1;'>
+  <div style='position:absolute; top:10px; left:0px; z-index:2'>
+{% endblock %}
+{% block content %}
+   <div id='content1'>
+  <h2>
+   写真館
+  </h2>
+  <p>　このページでは、今まで自分が撮影した写真を掲載しています。</p>
+  <p>　更新する度に,各季節に関係する写真がランダムで表示されます。</p>
+  <p>　宜しければご覧になっていってください。</p>
+   <li1><span style='color:#FFE4E1'>春</span></li1>
+    <ul>
+<script type='text/javascript'>
+   var selectnum = Math.floor(Math.random() * 5);
+　 var output1 = '<a rel="lightbox" href='+ "img/demopage/photo1/" + selectnum + ".JPG"  +">";　
+　 var output2 = '<img width="250" height="150" alt="for spring" style="border: 10px ridge #FFE4E1;" src='+ "photo1/" + selectnum + ".JPG"  +"></a>";　
+   document.write(output1);
+   document.write(output2);
+</script>
+    </ul>
+   <li1><span style='color:lawngreen'>夏</span></li1>
+    <ul>
+<script type='text/javascript'>
+   var selectnum = Math.floor(Math.random() * 5);
+　 var output1 = '<a rel="lightbox" href='+ "img/demopage/photo2/" + selectnum + ".JPG"  +">";　
+　 var output2 = '<img width="250" height="150" alt="for summer" style="border: 10px ridge lawngreen;" src='+ "photo2/" + selectnum + ".JPG"  +"></a>";　
+   document.write(output1);
+   document.write(output2);
+</script>
+    </ul>
+   <li1><span style='color:darkorange'>秋</span></li1>
+    <ul>
+<script type='text/javascript'>
+   var selectnum = Math.floor(Math.random() * 6);
+   var output1 = '<a rel="lightbox" href='+ "img/demopage/photo3/" + selectnum + ".JPG"  +">";　
+　 var output2 = '<img height="150" alt="for autumn" style="border: 10px ridge darkorange;" src='+ "photo3/" + selectnum + ".JPG"  +"></a>";　
+   document.write(output1);
+   document.write(output2);　
+
+</script>
+    </ul>
+   <li1><span style='color:darkcyan'>冬</span></li1>
+    <ul>
+<script type='text/javascript'>
+   var selectnum = Math.floor(Math.random() * 5);
+　 var output1 = '<a rel="lightbox" href='+ "img/demopage/photo4/" + selectnum + ".JPG"  +">";　
+　 var output2 = '<img height="150" alt="for winter" style="border: 10px ridge darkcyan;" src='+ "photo4/" + selectnum + ".JPG"  +"></a>";　
+   document.write(output1);
+   document.write(output2);　
+</script>
+  </ul>
+  </div>
+{% endblock %} 

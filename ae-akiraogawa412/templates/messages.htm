@@ -1,0 +1,4 @@
+{% for chat in chat_list %}
+<p>{{chat.text}}({{chat.user.acct}})
+   {{chat.created|date:"D d M Y"}}</p>
+{% endfor %}

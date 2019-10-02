@@ -1,0 +1,26 @@
+{% extends '_base.htm' %}
+{% block title %}Login画面{% endblock %}
+{% block content %}
+  <div id= 'content5'>
+   <h2>Login entrance</h2>
+   <p>
+   メッセージを残してくださる方は、下の各欄にIDとPWを入力してログインしてください。<br>
+   なお、初めての方は,「New Account」をクリックした後、その先のページでアカウントを作成してください。 
+   </p>
+   <form method='post' action='/login'>
+   Account:<input type='text' name='account'/><br>
+   Passward:<input type='password' name='password'/><br/>
+   <input type='submit' value='Login'/>
+   <input type='submit' value='New Account'
+     onclick="window.location='/apply.htm';return false;"/>
+   <input type='submit' value='Cancel'
+     onclick="window.location='/';return false;"/>
+   </form> 
+   </p>
+   {% ifnotequal error None%}
+   <p>
+   {{error}}
+   </p>
+   {% endifnotequal%}
+  </div>
+{% endblock %}

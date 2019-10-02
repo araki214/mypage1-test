@@ -1,0 +1,42 @@
+{% extends '_base.htm' %}
+{% block title %}メッセージページ{% endblock %}
+{% block back %} 
+  <img src='DSC_0763.jpg' width='100%' height='100%'
+     style='position:fixed; top:0px; left:0px; z-index:1;'>
+  <div style='position:absolute; top:10px; left:0px; z-index:2'>
+{% endblock %}
+{% block meta %}
+  <meta http-equiv='Content-Type' content='text/html' charset='Shift_JIS'>
+{% endblock  %}
+{% block content %}
+ <div id='chat'>
+  <h1>Message</h1>
+  <p>
+  <form method='post' action='/chat'>
+  <input type='text' name='message' size='60'/>
+  <input type='submit' name='Chat'/>
+  </form></p>
+  {% ifnotequal error None %}
+  <p>
+  {{error}}
+  </p>
+  {% endifnotequal %}
+    <div id="chatcontent">
+      Loading...
+    </div>
+  <script>
+  function updateMsg(){
+  $.ajax({
+   url:"/messages.htm",
+   cache:false,
+   success: function(html){
+    $("#chatcontent").html(html);
+   } 
+   });
+   setTimeout('updateMsg()',4000);
+  } 
+  updateMsg();
+  </script>
+ </div>
+{% endblock %}
+ 

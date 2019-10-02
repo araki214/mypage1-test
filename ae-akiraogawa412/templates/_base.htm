@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 
+ 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'> 
+<html xmlns='http://www.w3.org/1999/xhtml'>
+ <head>
+  <title>{% block title %}title{% endblock %}</title>
+  <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
+  <meta http-equiv='Content-Style-Type' content='text/css'>
+  <meta content='text/javascript' http-equiv='Content-Script-Type'>
+  <link type='text/css' rel='stylesheet' href='/static/glike.css' />
+  <link type='text/css' rel='stylesheet' href='/static/lightbox.css' media='screen'/> 
+  <script type='text/javascript' src='/static/js/lightbox.js'></script>
+  <script type='text/javascript' src='/static/js/scriptaculous.js?load=effects,builder'></script>
+  <script type='text/javascript' src='http://www.netyasun.com/tools/lightbox/js/effects.js'></script>
+  <script type='text/javascript' src='http://www.netyasun.com/tools/lightbox/js/builder.js'></script>
+  <script type='text/javascript' src='/static/js/jquery-1.11.2.js'></script>
+  <script type='text/javascript' src='/static/js/lightbox.min.js'></script>
+  <style type='text/css'> 
+   {% block type %}
+   {% endblock %}
+  </style>
+ </head>
+ <body>
+ {% block back %}
+ <img src="DSC_0750_20140824184828774_20141105105147761.jpg" width="100%" height="100%"
+     style="position:fixed; top:0px; left:0px; z-index:1;">
+ <div style="position:absolute; top:10px; left:0px; z-index:2">
+{% endblock %}
+  <div id='header'>
+   <h1><a href='index.html'><span style='color:white'>徒然なるままに</span></a></h1>
+      <li><a href='intro.html'
+         {% ifequal path '/intro.html'%}     
+           class='selected'
+         {% endifequal %}
+         > simple
+           <br>introduction</a></li>
+
+      <li><a href='light.html'
+         {% ifequal path '/light.html'%}
+           class='selected'
+         {% endifequal %}
+         >What's light polution?</a></li> 
+
+      <li><a href='picture.html'
+         {% ifequal path '/picture.html'%}
+           class='selected'
+         {% endifequal %}
+         >Picture
+          <br> 
+         gallery</a></li> 
+
+      <li><a href='bbs.html'
+        {% ifequal path '/bbs.html'%}
+          class='selected'
+        {% endifequal %}
+       >Link
+          <br>page 
+       </a></li>  
+
+         {% if username %}
+      <li><a href='/logout'>Logout<br>button</a></li>
+         {% else %}
+      <li><a href='/login'
+         {% ifequal path '/login'%}
+          class='selected'
+         {% endifequal %}
+       >Login<br>page</li></a>     
+         {% endif %} 
+
+      <li><a href='review.htm'
+        {% ifequal path '/review.html'%}
+          class='selected'
+        {% endifequal %}
+       >Review
+          <br>page 
+       </a></li>  
+
+         {% if username %}
+      <li><a href='memberscreen.htm'
+         {% ifequal path '/memberscreen.htm'%}     
+           class='selected'
+         {% endifequal %}
+         >Members'<br>table</a></li>
+         {% endif %}
+
+         {% if username %}
+      <li><a href='chatscreen.htm'
+         {% ifequal path '/chatscreen.htm'%}     
+           class='selected'
+         {% endifequal %}
+         >Page<br>for messages</a></li>
+         {% endif %}
+
+  </div>
+  {% block content  %}
+   replace area
+  {% endblock %}
+ </body>
+</html>

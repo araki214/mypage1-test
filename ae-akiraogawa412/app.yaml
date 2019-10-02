@@ -1,0 +1,11 @@
+application: ae-akiraogawa412
+version: 4
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /static
+  static_dir: static
+- url: /.*
+  script: basic.app
