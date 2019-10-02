@@ -131,21 +131,21 @@ color:aqua;
 }
 #content3 {
 font-weight:bold;
-  color:#6BD6C4;
+  color:#53ADB2;
 font-size:large;
 }
 #content3 h2 {
  font-size:x-large;
- color:#D94538;
+ color:#EC5549;
 }
 #content3 li{
-color:#F4BB00;
+color:#F3A627;
 font-weight:bold;
 text-shadow:none;
 }
 
 #content3 a{
-color:#D94538;
+color:#EC5549;
 text-decoration:none; 
 }
 
@@ -165,18 +165,6 @@ text-shadow: -1px -1px 0 #F0E68C, 1px -1px 0 #F0E68C, -1px 1px 0 #F0E68C, 1px 1p
 #content6 {
 color:#FFDEAD;
 font-weight:bold;
-}
-
-#chat{
-color:khaki;
-}
-
-#chat h1{
-color:greenyellow;
-}
-
-#chatcontent{
-color:yellow;
 }
 
 
