@@ -1,6 +1,4 @@
 {% extends '_base.htm' %}
-  <style type='text/css'> 
-  {% block title %}自己紹介{% endblock %} </style>
 {% block back %} 
   <img src="DSC_0125_20141026151747916.jpg" width="100%" height="100%"
      style="position:fixed; top:0px; left:0px; z-index:1;">
@@ -10,7 +8,7 @@
  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'> 
 <html xmlns='http://www.w3.org/1999/xhtml'>
  <head>
-  <title>{% block title %}title{% endblock %}</title>
+  <title>{% block title %}Introduction{% endblock %}</title>
   <meta http-equiv='Content-Type' content='text/html' charset='utf-8'>
   <meta http-equiv='Content-Style-Type' content='text/css'>
   <meta content='text/javascript' http-equiv='Content-Script-Type'>
@@ -47,31 +45,7 @@
           <br> 
          gallery</a></li> 
 
-      <li><a href='bbs.html'
-        {% ifequal path '/bbs.html'%}
-          class='selected'
-        {% endifequal %}
-       >Link
-          <br>page 
-       </a></li>  
 
-         {% if username %}
-      <li><a href='/logout'>Logout<br>button</a></li>
-         {% else %}
-      <li><a href='/login'
-         {% ifequal path '/login'%}
-          class='selected'
-         {% endifequal %}
-       >Login<br>page</li></a>     
-         {% endif %} 
-
-      <li><a href='review.htm'
-        {% ifequal path '/review.html'%}
-          class='selected'
-        {% endifequal %}
-       >Review
-          <br>page 
-       </a></li>  
    <div id='content3'>
     <h2>Self-Introduction</h2>
     <ul>
