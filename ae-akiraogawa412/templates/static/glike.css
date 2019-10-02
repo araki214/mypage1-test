@@ -132,11 +132,6 @@ color:aqua;
 #content3 {
 font-weight:bold;
   color:#FF9900;
-  text-shadow:
--1px -1px 0 #FFD494,
-1px -1px 0 #FFD494,
--1px 1px 0 #FFD494,
-1px 1px 0 #FFD494;
 font-size:large;
 }
 #content3 h2 {
